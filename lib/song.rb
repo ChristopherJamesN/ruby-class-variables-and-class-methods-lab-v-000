@@ -19,6 +19,8 @@ class Song
   end
 
   def self.genres
+    each.@@genres do |i|
+      
     @@genres
   end
 
