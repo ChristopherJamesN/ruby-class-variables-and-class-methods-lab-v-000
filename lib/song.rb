@@ -21,7 +21,7 @@ class Song
   def self.genres
     @@genres.each_with_index do |i,index|
       if @@genres[index+1] == i
-        @@genres.remove(index)
+        @@genres.delete(index)
       end
     end
     @@genres
