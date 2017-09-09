@@ -19,11 +19,7 @@ class Song
   end
 
   def self.genres
-    @@genres.each_with_index do |i,index|
-      if @@genres[index+1] == i
-        @@genres = @@genres.delete(index)
-      end
-    end
+    dup=@@genres.select{|element| @@genres.count(element) > 1 }
     @@genres
   end
 
