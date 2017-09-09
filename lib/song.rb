@@ -24,6 +24,7 @@ class Song
   end
 
   def self.artists
+    dup=@@artists.select{|element| @@artists.count(element) > 1 }
     @@artists
   end
 
