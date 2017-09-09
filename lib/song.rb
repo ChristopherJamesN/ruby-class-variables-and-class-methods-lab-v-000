@@ -5,4 +5,5 @@ def Song
     @artist = artist
     @genre = genre
   end
+  
 end
