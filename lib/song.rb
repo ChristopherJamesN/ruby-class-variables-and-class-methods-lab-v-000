@@ -19,7 +19,7 @@ class Song
   end
 
   def self.genres
-    @@genres.remove{|element| @@genres.count(element) > 1 }
+    @@genres.select{|element| @@genres.count(element) > 1 }
     @@genres
   end
 
