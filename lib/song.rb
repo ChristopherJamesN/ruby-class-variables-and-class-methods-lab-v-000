@@ -19,7 +19,7 @@ class Song
   end
 
   def self.genres
-    @@genres.select{|element| @@genres.count(element) > 1 }
+    @@genres.uniq
     @@genres
   end
 
